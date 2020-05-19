@@ -24,6 +24,11 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+app.get('/loaderio-7d5239b56433846e7de5443f1e01aedf.txt', (req, res) => {
+  res.send("loaderio-7d5239b56433846e7de5443f1e01aedf");
+});
+
 app.get('/', (req, res) => {
   res.send("hello jexia");
 //   todo
