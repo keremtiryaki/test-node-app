@@ -25,21 +25,22 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  todo
-  .select()
-  .limit(200)
-  .fields("text", "id","done")
-  .where(field=> field("text").isLike("%4").and(field("id").isNotNull()))
-  .subscribe(
-   records => { 
-    console.log(records)
-    res.send(records)
-  }, 
-  error => { 
-     console.log(error)
-     next(error)
-  }
- );  
+  res.send("hello jexia");
+//   todo
+//   .select()
+//   .limit(200)
+//   .fields("text", "id","done")
+//   .where(field=> field("text").isLike("%4").and(field("id").isNotNull()))
+//   .subscribe(
+//    records => { 
+//     console.log(records)
+//     res.send(records)
+//   }, 
+//   error => { 
+//      console.log(error)
+//      next(error)
+//   }
+//  );  
 });
 
 app.listen(PORT, HOST);
